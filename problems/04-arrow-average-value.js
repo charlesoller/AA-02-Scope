@@ -11,6 +11,7 @@ arrowAvgValue([100, 60, 64]); // => 74.66666666666667
 ***********************************************************************/
 
 // Your code here
+const arrowAvgValue = array => array.reduce((acc, num) => acc + num) / array.length;
 
 console.log(arrowAvgValue([10, 20])); // => 15
 console.log(arrowAvgValue([2, 3, 7])); // => 4
