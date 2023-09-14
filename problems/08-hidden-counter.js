@@ -15,11 +15,17 @@ hidden2(); // returns 1
 
 ***********************************************************************/
 
-// Your code here
+const hiddenCounter = () => {
+  let counter = 0;
+  return function(){
+    counter++;
+    return counter;
+  }
+}
 
 let hidden1 = hiddenCounter(); //returns a function
 console.log(hidden1()); // returns 1
-hidden1(); // returns 2
+console.log(hidden1()); // returns 2
 
 let hidden2 = hiddenCounter(); // returns a function
 console.log(hidden2()); // returns 1
