@@ -13,7 +13,33 @@ function returned by recVolume should continue to return the original volume.
 
 ***********************************************************************/
 
-// Your code here 
+const recVolume = height => {
+  let width;
+  let length;
+  return volume = (x) => {
+    if(width === undefined){
+      width = x;
+    } else if(length === undefined){
+      length = x;
+    }
+
+    return (width != undefined && length != undefined) ? width * length * height : volume;
+  }
+}
+
+// let firstCall = recVolume(7);
+// console.log(firstCall);
+
+// let val1 = firstCall(4);
+// console.log(val1);
+
+// let val2 = firstCall(5);
+// console.log(val2);
+
+// console.log(firstCall(4));
+// console.log(firstCall(5));
+// console.log(firstCall());
+// console.log(firstCall(100));
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 

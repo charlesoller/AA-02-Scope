@@ -29,11 +29,11 @@ Example 4:
 ***********************************************************************/
 
 const countDownTimer = (n) => {
-  if (n === 0){return "Happy New Year"};
+  if (n === 0){return "Happy New Year!"};
   return cb = () => {
     n--;
     if (n <= 0){
-      return "Happy New Year";
+      return "Happy New Year!";
     } else {
       return cb;
     }

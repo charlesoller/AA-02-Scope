@@ -19,19 +19,22 @@ sandwich2("pb") // => "One sandwich with tomato and pb"
 
 // Your code here
 const sandwichMaker = () => {
-  let order = 'One sandwich with tomato'
+  let sandwich = ''
   return (str) => {
-    return order + ' and ' + str;
+    sandwich += ' and ' + str;
+    return 'One sandwich with tomato' + sandwich;
   }
 }
 
 
 let sandwich = sandwichMaker(); // => returns a function
+console.log(sandwich);
 console.log(sandwich("spinach")) // => "One sandwich with tomato and spinach"
 console.log(sandwich("jelly")) // => "One sandwich with tomato and spinach and jelly"
 console.log(sandwich("bread")) // => "One sandwich with tomato and spinach and jelly and bread"
 
 let sandwich2 = sandwichMaker(); // => returns a function
+console.log(sandwich2);
 console.log(sandwich2("pb")) // => "One sandwich with tomato and pb"
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
@@ -42,3 +45,4 @@ try {
   // catch the ref err
   module.exports = null;
 }
+
