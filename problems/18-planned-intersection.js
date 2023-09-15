@@ -15,8 +15,16 @@ console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
 
 *******************************************************************************/
 
-// Your code here 
+const plannedIntersect = firstArr => {
+  return innerInt = secondArr => secondArr.filter(letter => firstArr.includes(letter));
+}
 
+let abc = plannedIntersect(["a", "b", "c"]); // returns a function
+console.log(abc(["b", "d", "c"])); // returns [ 'b', 'c' ]
+
+
+let fame = plannedIntersect(["f", "a", "m", "e"]); // returns a function
+console.log(fame(["a", "f", "z", "b"])); // returns [ 'f', 'a' ]
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*************************/
 
 try {
