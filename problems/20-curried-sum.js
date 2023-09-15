@@ -44,7 +44,7 @@ AFTER YOU ARE FINISHED WITH THIS PROBLEM, ASK FOR A CODE REVIEW
 ***********************************************************************/
 
 const curriedSum = numArgs => {
-  // Longer format
+  /* ------------- Longer format following above direction ------------- */
   // if (numArgs <= 0){
   //   return null;
   // }
@@ -63,9 +63,10 @@ const curriedSum = numArgs => {
   //   }
   // }
 
+  /* ------------- Condensed version ------------- */
   let numbers = [];
   return numArgs <= 0 ? null : _curriedSum = num => {
-    if(num <= 0){return null};
+    if(num <= 0){return null};        // isn't necessary to pass spec
     numbers.push(num);
     return numbers.length === numArgs ? numbers.reduce((sum, x) => sum + x) : _curriedSum;
   }
